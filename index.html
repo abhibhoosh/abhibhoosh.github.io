@@ -1,0 +1,1016 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9l免费破解官网 - 资源站 | 免费软件·绿色工具·极客社区</title>
+<meta name="description" content="9l免费破解官网是一个面向极客与数字创作者的资源分享社区，提供绿色软件、开源工具、视频素材与破解研究资讯，坚持免费、透明、安全的内容生态。">
+<style>
+  :root{
+    --bg:#07080c;
+    --bg-soft:#0d0f16;
+    --panel:#11141d;
+    --panel-2:#161a25;
+    --line:#232838;
+    --text:#e8ecf4;
+    --muted:#8f98ad;
+    --dim:#5d6577;
+    --accent:#00e6a7;
+    --accent-2:#3b82f6;
+    --accent-3:#ff5c8a;
+    --warn:#ffb020;
+    --radius:16px;
+    --shadow:0 24px 60px rgba(0,0,0,.5);
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(1100px 620px at 82% -12%, rgba(0,230,167,.13), transparent 60%),
+      radial-gradient(900px 520px at 6% 4%, rgba(59,130,246,.14), transparent 62%),
+      radial-gradient(760px 460px at 50% 108%, rgba(255,92,138,.08), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  ::selection{background:rgba(0,230,167,.28);color:#fff}
+  .wrap{width:min(1200px,92vw);margin:0 auto}
+  .mono{font-family:var(--mono)}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--accent);
+    padding:.42rem .8rem;border:1px solid rgba(0,230,167,.28);
+    border-radius:999px;background:rgba(0,230,167,.06);
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:blink 2.2s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+  /* ---------- nav ---------- */
+  header.site{
+    position:sticky;top:0;z-index:60;backdrop-filter:blur(18px) saturate(140%);
+    background:rgba(7,8,12,.72);border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;gap:2rem;height:74px}
+  .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:.02em}
+  .brand .logo{
+    width:38px;height:38px;border-radius:11px;position:relative;
+    background:linear-gradient(135deg,#00e6a7,#3b82f6);
+    box-shadow:0 0 0 1px rgba(255,255,255,.08),0 10px 26px rgba(0,230,167,.28);
+    display:grid;place-items:center;color:#04110c;font-family:var(--mono);font-size:.92rem;font-weight:800;
+  }
+  .brand .logo::after{
+    content:"";position:absolute;inset:0;border-radius:inherit;
+    background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,.4));
+    mix-blend-mode:overlay;
+  }
+  .brand b{font-size:1.06rem}
+  .brand small{display:block;font-size:.6rem;letter-spacing:.26em;color:var(--dim);font-weight:600;text-transform:uppercase;margin-top:-4px}
+  nav.links{display:flex;gap:.35rem;margin-left:auto;flex-wrap:wrap}
+  nav.links a{
+    font-size:.87rem;color:var(--muted);padding:.5rem .82rem;border-radius:9px;
+    transition:.22s;border:1px solid transparent;white-space:nowrap;
+  }
+  nav.links a:hover{color:var(--text);background:rgba(255,255,255,.05);border-color:var(--line)}
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;
+    padding:.6rem 1.1rem;border-radius:10px;color:#04110c;
+    background:linear-gradient(135deg,#00e6a7,#22d3ee);
+    box-shadow:0 8px 26px rgba(0,230,167,.3);transition:.22s;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,230,167,.42)}
+  .burger{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:9px;padding:.45rem .6rem;cursor:pointer}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:5.2rem 0 4rem;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:3.4rem;align-items:center}
+  h1{
+    font-size:clamp(2.4rem,5.6vw,4.15rem);line-height:1.06;letter-spacing:-.03em;
+    font-weight:900;margin:1.3rem 0 1.2rem;
+  }
+  h1 .grad{
+    background:linear-gradient(100deg,#00e6a7 0%,#22d3ee 38%,#3b82f6 66%,#ff5c8a 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 6px 30px rgba(0,230,167,.28));
+  }
+  .hero p.lead{color:var(--muted);font-size:1.03rem;max-width:46ch;margin-bottom:2rem}
+  .hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;font-weight:700;font-size:.93rem;
+    padding:.86rem 1.5rem;border-radius:12px;transition:.22s;border:1px solid transparent;cursor:pointer;
+  }
+  .btn.primary{background:linear-gradient(135deg,#00e6a7,#22d3ee);color:#04110c;box-shadow:0 14px 36px rgba(0,230,167,.32)}
+  .btn.primary:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(0,230,167,.46)}
+  .btn.ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+  .btn.ghost:hover{background:rgba(255,255,255,.07);border-color:#33405a;transform:translateY(-2px)}
+  .hero-stats{display:flex;gap:2.4rem;margin-top:2.6rem;flex-wrap:wrap}
+  .hero-stats div{border-left:2px solid var(--line);padding-left:1rem}
+  .hero-stats b{display:block;font-family:var(--mono);font-size:1.45rem;color:var(--text);letter-spacing:-.02em}
+  .hero-stats span{font-size:.75rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+
+  /* terminal card */
+  .term{
+    background:linear-gradient(180deg,#0e1119,#0a0c12);
+    border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden;position:relative;
+  }
+  .term::before{
+    content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;
+    background:linear-gradient(140deg,rgba(0,230,167,.34),transparent 42%,transparent 70%,rgba(59,130,246,.3));
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;padding:1px;
+  }
+  .term-bar{display:flex;align-items:center;gap:.5rem;padding:.75rem 1rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+  .term-bar i{width:10px;height:10px;border-radius:50%;background:#2b3242}
+  .term-bar i:nth-child(1){background:#ff5c8a}
+  .term-bar i:nth-child(2){background:var(--warn)}
+  .term-bar i:nth-child(3){background:var(--accent)}
+  .term-bar span{margin-left:auto;font-family:var(--mono);font-size:.7rem;color:var(--dim);letter-spacing:.1em}
+  .term-body{padding:1.25rem 1.1rem 1.4rem;font-family:var(--mono);font-size:.79rem;line-height:1.95}
+  .term-body .c{color:var(--dim)}
+  .term-body .k{color:var(--accent-2)}
+  .term-body .s{color:var(--accent)}
+  .term-body .n{color:var(--warn)}
+  .term-body .p{color:#c7d0e2}
+  .cursor{display:inline-block;width:8px;height:14px;background:var(--accent);vertical-align:-2px;animation:blink 1.1s steps(1) infinite}
+  .term-foot{display:flex;gap:1rem;flex-wrap:wrap;padding:.8rem 1.1rem;border-top:1px solid var(--line);background:rgba(255,255,255,.015);font-size:.7rem;color:var(--dim);font-family:var(--mono);letter-spacing:.08em}
+  .term-foot b{color:var(--accent)}
+
+  /* ---------- marquee ---------- */
+  .ribbon{
+    border-block:1px solid var(--line);background:rgba(255,255,255,.015);
+    overflow:hidden;padding:.8rem 0;margin-top:3.4rem;
+  }
+  .ribbon-track{display:flex;gap:3rem;width:max-content;animation:slide 32s linear infinite}
+  .ribbon-track span{font-family:var(--mono);font-size:.76rem;letter-spacing:.2em;color:var(--dim);text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;gap:3rem}
+  .ribbon-track span::after{content:"◆";color:var(--accent);font-size:.55rem}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* ---------- section base ---------- */
+  section{padding:5.4rem 0;position:relative}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:2.8rem;flex-wrap:wrap}
+  .sec-head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);letter-spacing:-.02em;line-height:1.18;font-weight:800}
+  .sec-head p{color:var(--muted);max-width:52ch;font-size:.94rem;margin-top:.7rem}
+  .sec-no{font-family:var(--mono);font-size:.72rem;color:var(--dim);letter-spacing:.24em}
+  .rule{height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-bottom:2.6rem}
+
+  /* ---------- features ---------- */
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+  .card{
+    background:linear-gradient(180deg,var(--panel),var(--bg-soft));
+    border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem;
+    position:relative;overflow:hidden;transition:.26s;
+  }
+  .card::after{
+    content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;transition:.26s;pointer-events:none;
+    background:radial-gradient(420px 180px at var(--mx,50%) var(--my,0%),rgba(0,230,167,.13),transparent 70%);
+  }
+  .card:hover{transform:translateY(-6px);border-color:#2e3a52;box-shadow:0 26px 56px rgba(0,0,0,.44)}
+  .card:hover::after{opacity:1}
+  .ico{
+    width:48px;height:48px;border-radius:13px;display:grid;place-items:center;margin-bottom:1.15rem;
+    background:rgba(0,230,167,.09);border:1px solid rgba(0,230,167,.25);color:var(--accent);
+  }
+  .card h3{font-size:1.08rem;margin-bottom:.55rem;font-weight:700}
+  .card p{color:var(--muted);font-size:.88rem}
+  .card .tag-row{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:1.05rem}
+  .tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;color:var(--dim);border:1px solid var(--line);padding:.2rem .55rem;border-radius:999px}
+
+  /* ---------- resources table ---------- */
+  .res-panel{border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(180deg,var(--panel),var(--bg-soft));overflow:hidden}
+  .res-tabs{display:flex;gap:.25rem;padding:.7rem;border-bottom:1px solid var(--line);flex-wrap:wrap;background:rgba(255,255,255,.015)}
+  .res-tabs button{
+    font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--muted);
+    background:none;border:1px solid transparent;padding:.45rem .9rem;border-radius:8px;cursor:pointer;transition:.2s;
+  }
+  .res-tabs button:hover{color:var(--text);background:rgba(255,255,255,.05)}
+  .res-tabs button.active{color:#04110c;background:linear-gradient(135deg,#00e6a7,#22d3ee);font-weight:800}
+  .res-list{display:flex;flex-direction:column}
+  .res-item{
+    display:grid;grid-template-columns:44px 1fr 150px 118px 96px;gap:1rem;align-items:center;
+    padding:1.05rem 1.35rem;border-bottom:1px solid var(--line);transition:.2s;
+  }
+  .res-item:last-child{border-bottom:none}
+  .res-item:hover{background:rgba(255,255,255,.028)}
+  .res-ico{
+    width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+    font-family:var(--mono);font-size:.72rem;font-weight:800;color:#04110c;
+    background:linear-gradient(135deg,#00e6a7,#3b82f6);
+  }
+  .res-item .main b{font-size:.94rem;display:block;font-weight:700}
+  .res-item .main span{font-size:.78rem;color:var(--dim);font-family:var(--mono)}
+  .res-item .ver{font-family:var(--mono);font-size:.76rem;color:var(--muted)}
+  .res-item .size{font-family:var(--mono);font-size:.76rem;color:var(--dim)}
+  .res-item .dl{
+    justify-self:end;font-size:.76rem;font-weight:700;padding:.38rem .8rem;border-radius:8px;
+    border:1px solid rgba(0,230,167,.3);color:var(--accent);background:rgba(0,230,167,.07);transition:.2s;
+  }
+  .res-item .dl:hover{background:var(--accent);color:#04110c}
+
+  /* ---------- numbers ---------- */
+  .band{border-block:1px solid var(--line);background:linear-gradient(180deg,rgba(0,230,167,.04),transparent)}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+  .metric{padding:1.6rem 1.3rem;border:1px solid var(--line);border-radius:14px;background:var(--panel);position:relative;overflow:hidden}
+  .metric::before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:linear-gradient(90deg,var(--accent),transparent)}
+  .metric b{display:block;font-family:var(--mono);font-size:1.9rem;letter-spacing:-.03em;color:var(--text)}
+  .metric span{font-size:.74rem;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+
+  /* ---------- tutorial ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;counter-reset:s}
+  .step{
+    padding:1.6rem 1.35rem;border:1px solid var(--line);border-radius:14px;
+    background:linear-gradient(180deg,var(--panel-2),var(--bg-soft));position:relative;
+  }
+  .step .num{
+    font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--accent);
+    display:inline-block;padding:.2rem .55rem;border:1px solid rgba(0,230,167,.28);border-radius:6px;margin-bottom:.9rem;
+  }
+  .step h4{font-size:.98rem;margin-bottom:.45rem}
+  .step p{font-size:.84rem;color:var(--muted)}
+
+  /* ---------- articles ---------- */
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .post{
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    background:linear-gradient(180deg,var(--panel),var(--bg-soft));transition:.26s;display:flex;flex-direction:column;
+  }
+  .post:hover{transform:translateY(-6px);border-color:#2e3a52;box-shadow:0 26px 56px rgba(0,0,0,.44)}
+  .post .cover{height:140px;position:relative;overflow:hidden;background:#0b0e15}
+  .post .cover svg{width:100%;height:100%}
+  .post .body{padding:1.25rem 1.3rem 1.4rem;flex:1;display:flex;flex-direction:column}
+  .post .meta{display:flex;gap:.6rem;font-family:var(--mono);font-size:.68rem;color:var(--dim);letter-spacing:.1em;margin-bottom:.7rem;text-transform:uppercase}
+  .post .meta i{color:var(--accent);font-style:normal}
+  .post h4{font-size:1.02rem;line-height:1.42;margin-bottom:.55rem}
+  .post p{font-size:.85rem;color:var(--muted);flex:1}
+  .post .more{margin-top:1rem;font-family:var(--mono);font-size:.72rem;color:var(--accent);letter-spacing:.1em}
+
+  /* ---------- community ---------- */
+  .community{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start}
+  .quote{
+    border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem;background:linear-gradient(180deg,var(--panel),var(--bg-soft));position:relative;
+  }
+  .quote .mark{font-size:3rem;line-height:1;color:rgba(0,230,167,.35);font-family:Georgia,serif}
+  .quote p{font-size:1rem;color:#cfd7e6;margin:.6rem 0 1.2rem}
+  .quote .who{display:flex;align-items:center;gap:.8rem}
+  .avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-weight:800;font-size:.8rem;color:#04110c;background:linear-gradient(135deg,#22d3ee,#3b82f6)}
+  .quote .who b{font-size:.88rem;display:block}
+  .quote .who span{font-size:.74rem;color:var(--dim);font-family:var(--mono)}
+  .feed{display:flex;flex-direction:column;gap:.9rem}
+  .feed-item{display:flex;gap:.9rem;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);transition:.2s}
+  .feed-item:hover{border-color:#2e3a52;background:rgba(255,255,255,.04)}
+  .feed-item .fx{font-family:var(--mono);font-size:.7rem;color:var(--accent);white-space:nowrap;padding-top:.15rem}
+  .feed-item b{font-size:.88rem;display:block;font-weight:600}
+  .feed-item span{font-size:.76rem;color:var(--dim)}
+
+  /* ---------- faq ---------- */
+  .faq{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line);padding:1.2rem 0}
+  summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:1rem;font-weight:600;font-size:.98rem}
+  summary::-webkit-details-marker{display:none}
+  summary .plus{
+    width:22px;height:22px;flex:0 0 auto;border-radius:6px;border:1px solid var(--line);
+    display:grid;place-items:center;color:var(--accent);font-family:var(--mono);font-size:.85rem;transition:.2s;
+  }
+  details[open] summary .plus{transform:rotate(45deg);background:rgba(0,230,167,.12);border-color:rgba(0,230,167,.4)}
+  details p{padding:.8rem 0 0 2.4rem;color:var(--muted);font-size:.88rem}
+
+  /* ---------- cta ---------- */
+  .cta{
+    border:1px solid var(--line);border-radius:24px;padding:3.4rem 2.6rem;position:relative;overflow:hidden;
+    background:
+      radial-gradient(700px 300px at 88% 0%,rgba(59,130,246,.2),transparent 65%),
+      radial-gradient(600px 320px at 5% 100%,rgba(0,230,167,.16),transparent 62%),
+      linear-gradient(180deg,#0f131c,#0a0c12);
+    text-align:center;
+  }
+  .cta h2{font-size:clamp(1.7rem,3.4vw,2.5rem);letter-spacing:-.02em;margin-bottom:.9rem}
+  .cta p{color:var(--muted);max-width:56ch;margin:0 auto 2rem;font-size:.96rem}
+  .cta .hero-actions{justify-content:center}
+  .cta .fineprint{margin-top:1.6rem;font-family:var(--mono);font-size:.7rem;color:var(--dim);letter-spacing:.1em}
+
+  /* ---------- footer ---------- */
+  footer{border-top:1px solid var(--line);padding:3.4rem 0 2.2rem;background:rgba(0,0,0,.24)}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.4rem;margin-bottom:2.6rem}
+  .foot-grid h5{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem;font-weight:700}
+  .foot-grid a{display:block;font-size:.86rem;color:var(--muted);padding:.28rem 0;transition:.18s}
+  .foot-grid a:hover{color:var(--accent);transform:translateX(3px)}
+  .foot-brand p{font-size:.85rem;color:var(--muted);max-width:34ch;margin-top:.9rem}
+  .foot-bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.6rem;border-top:1px solid var(--line);font-size:.76rem;color:var(--dim);font-family:var(--mono);letter-spacing:.06em}
+  .foot-bottom .badges{display:flex;gap:.8rem;flex-wrap:wrap}
+  .foot-bottom .badges span{border:1px solid var(--line);border-radius:999px;padding:.18rem .6rem}
+
+  /* ---------- toast ---------- */
+  .toast{
+    position:fixed;bottom:26px;left:50%;transform:translate(-50%,140%);
+    background:var(--panel-2);border:1px solid rgba(0,230,167,.4);color:var(--text);
+    padding:.8rem 1.3rem;border-radius:12px;font-size:.85rem;box-shadow:var(--shadow);
+    transition:.35s cubic-bezier(.2,.9,.3,1.2);z-index:99;font-family:var(--mono);letter-spacing:.04em;
+  }
+  .toast.show{transform:translate(-50%,0)}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- responsive ---------- */
+  @media(max-width:1000px){
+    .hero-grid{grid-template-columns:1fr;gap:2.6rem}
+    .feature-grid,.posts,.steps{grid-template-columns:repeat(2,1fr)}
+    .metrics{grid-template-columns:repeat(2,1fr)}
+    .community{grid-template-columns:1fr}
+    .res-item{grid-template-columns:40px 1fr 96px}
+    .res-item .ver,.res-item .size{display:none}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:720px){
+    nav.links{display:none;position:absolute;top:74px;left:0;right:0;background:rgba(7,8,12,.97);border-bottom:1px solid var(--line);padding:1rem;flex-direction:column}
+    nav.links.open{display:flex}
+    .burger{display:block;margin-left:auto}
+    .nav-cta{display:none}
+    .feature-grid,.posts,.steps{grid-template-columns:1fr}
+    .hero{padding-top:3.4rem}
+    .hero-stats{gap:1.4rem}
+    .cta{padding:2.4rem 1.4rem}
+    .foot-grid{grid-template-columns:1fr}
+    section{padding:3.8rem 0}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="9l免费破解官网首页">
+      <span class="logo">9L</span>
+      <span>
+        <b>9l免费破解官网</b>
+        <small>Free · Open · Secure</small>
+      </span>
+    </a>
+    <button class="burger" id="burger" aria-label="打开导航">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#features">平台能力</a>
+      <a href="#resources">资源库</a>
+      <a href="#tutorial">下载指南</a>
+      <a href="#insights">技术观察</a>
+      <a href="#community">社区</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#resources">进入资源库 →</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>持续更新 · 今日新增 128 个条目</span>
+        <h1><span class="grad">9l免费破解官网</span><br>让好用工具回到该有的样子</h1>
+        <p class="lead">一个由极客与数字创作者共同维护的资源社区。我们整理绿色软件、开源工具、视频素材与逆向研究笔记，坚持免费、透明、可验证的内容标准，让每一次下载都清楚来路。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#resources">浏览资源库
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn ghost" href="#tutorial">查看安全下载说明</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>18,400+</b><span>资源条目</span></div>
+          <div><b>2.6M</b><span>累计下载</span></div>
+          <div><b>96.4%</b><span>安全校验通过</span></div>
+          <div><b>24h</b><span>平均审核时效</span></div>
+        </div>
+      </div>
+
+      <div class="term" aria-hidden="true">
+        <div class="term-bar"><i></i><i></i><i></i><span>9l-free@community</span></div>
+        <div class="term-body">
+          <div><span class="c"># 校验资源完整性</span></div>
+          <div><span class="k">$</span> <span class="p">9l verify</span> <span class="s">--pkg=green-tool-suite</span></div>
+          <div><span class="n">[✓]</span> <span class="p">杀毒扫描完成 · 0 威胁</span></div>
+          <div><span class="n">[✓]</span> <span class="p">数字签名校验通过</span></div>
+          <div><span class="n">[✓]</span> <span class="p">来源仓库：community/mirror-07</span></div>
+          <div><span class="k">$</span> <span class="p">9l info</span> <span class="s">--latest</span></div>
+          <div><span class="c"># 今日更新：视频工具箱 / 素材包 / 逆向笔记</span></div>
+          <div><span class="s">ready</span> <span class="p">— 安全下载通道已就绪</span> <span class="cursor"></span></div>
+        </div>
+        <div class="term-foot">
+          <span>MIRROR <b>07</b></span>
+          <span>CHECK <b>SHA-256</b></span>
+          <span>STATUS <b>ONLINE</b></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="ribbon">
+        <div class="ribbon-track">
+          <span>绿色软件<span></span></span>
+          <span>开源工具<span></span></span>
+          <span>视频素材<span></span></span>
+          <span>逆向研究<span></span></span>
+          <span>安全校验<span></span></span>
+          <span>社区共建<span></span></span>
+          <span>绿色软件<span></span></span>
+          <span>开源工具<span></span></span>
+          <span>视频素材<span></span></span>
+          <span>逆向研究<span></span></span>
+          <span>安全校验<span></span></span>
+          <span>社区共建<span></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 01 — 平台能力</span>
+          <h2>不只是资源站，<br>更是一套可信的分享机制</h2>
+        </div>
+        <p>我们把每一次上传、审核、校验、下载都设计成可追溯的流程。免费不等于随意，破解研究也不等于无序传播，规则先立，社区才能长久。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="feature-grid">
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>多重安全校验</h3>
+          <p>每个条目都会经过哈希比对、签名检查与多引擎扫描，结果直接展示在资源页，异常文件不会进入下载通道。</p>
+          <div class="tag-row"><span class="tag">SHA-256</span><span class="tag">多引擎扫描</span><span class="tag">签名核验</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 12h8M8 16h5"/></svg>
+          </div>
+          <h3>结构化的资源库</h3>
+          <p>按工具类型、平台、体积、更新时间等维度整理，支持标签筛选与版本历史，找旧版本不再依赖零散链接。</p>
+          <div class="tag-row"><span class="tag">版本历史</span><span class="tag">标签筛选</span><span class="tag">镜像切换</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19v-3"/></svg>
+          </div>
+          <h3>社区共建档案</h3>
+          <p>贡献者拥有公开主页与贡献记录，条目修订留在时间线里，谁改了什么、为什么改，全部可见。</p>
+          <div class="tag-row"><span class="tag">贡献者主页</span><span class="tag">修订时间线</span><span class="tag">公开评审</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 20h16"/></svg>
+          </div>
+          <h3>轻量下载通道</h3>
+          <p>多节点镜像与断点续传，国内访问优先调度低延迟节点；大文件提供分卷与校验文件，避免下载损坏。</p>
+          <div class="tag-row"><span class="tag">多镜像</span><span class="tag">断点续传</span><span class="tag">分卷校验</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3>持续更新节奏</h3>
+          <p>工作日每日巡检新增资源，周末整理专题合集；过时与失效条目会在 72 小时内标记并下架。</p>
+          <div class="tag-row"><span class="tag">每日巡检</span><span class="tag">专题合集</span><span class="tag">失效下架</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="ico">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+          </div>
+          <h3>创作者友好</h3>
+          <p>视频素材、模板与脚本类资源提供预览图与使用说明，商用边界写清楚，减少使用时的顾虑。</p>
+          <div class="tag-row"><span class="tag">素材预览</span><span class="tag">授权说明</span><span class="tag">模板脚本</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS BAND -->
+  <div class="band">
+    <div class="wrap" style="padding:2.6rem 0">
+      <div class="metrics">
+        <div class="metric reveal"><b>18,412</b><span>在库资源</span></div>
+        <div class="metric reveal"><b>3,206</b><span>社区贡献者</span></div>
+        <div class="metric reveal"><b>96.4%</b><span>校验通过率</span></div>
+        <div class="metric reveal"><b>118</b><span>镜像节点</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 02 — 资源库</span>
+          <h2>今日值得一看的条目</h2>
+        </div>
+        <p>所有条目均标注版本、体积与更新时间。点击分类可切换视图，下载前请阅读安全说明。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="res-panel reveal">
+        <div class="res-tabs" id="tabs">
+          <button class="active" data-cat="all">全部</button>
+          <button data-cat="green">绿色软件</button>
+          <button data-cat="video">视频工具</button>
+          <button data-cat="asset">素材包</button>
+          <button data-cat="research">逆向笔记</button>
+        </div>
+        <div class="res-list" id="resList">
+
+          <div class="res-item" data-cat="video">
+            <div class="res-ico">VT</div>
+            <div class="main"><b>视频工具箱 Suite</b><span>剪辑 · 转码 · 字幕 · 水印</span></div>
+            <div class="ver">v3.8.2</div>
+            <div class="size">184.6 MB</div>
+            <a class="dl" href="#resources" data-name="视频工具箱 Suite">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="green">
+            <div class="res-ico">GR</div>
+            <div class="main"><b>绿色启动器 Portable</b><span>免安装 · 便携 · 多版本共存</span></div>
+            <div class="ver">v2.1.0</div>
+            <div class="size">12.4 MB</div>
+            <a class="dl" href="#resources" data-name="绿色启动器 Portable">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="asset">
+            <div class="res-ico">AS</div>
+            <div class="main"><b>动态过渡素材合集</b><span>4K · 60fps · 含工程文件</span></div>
+            <div class="ver">2024.11</div>
+            <div class="size">1.2 GB</div>
+            <a class="dl" href="#resources" data-name="动态过渡素材合集">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="research">
+            <div class="res-ico">RS</div>
+            <div class="main"><b>协议分析研究笔记</b><span>抓包 · 报文 · 学习记录</span></div>
+            <div class="ver">v1.4</div>
+            <div class="size">6.8 MB</div>
+            <a class="dl" href="#resources" data-name="协议分析研究笔记">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="video">
+            <div class="res-ico">VC</div>
+            <div class="main"><b>轻量转码核心 CLI</b><span>命令行 · 批处理 · 硬件加速</span></div>
+            <div class="ver">v5.2.7</div>
+            <div class="size">48.9 MB</div>
+            <a class="dl" href="#resources" data-name="轻量转码核心 CLI">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="green">
+            <div class="res-ico">SY</div>
+            <div class="main"><b>系统清理小助手</b><span>缓存清理 · 启动项 · 磁盘报告</span></div>
+            <div class="ver">v1.9.3</div>
+            <div class="size">9.2 MB</div>
+            <a class="dl" href="#resources" data-name="系统清理小助手">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="asset">
+            <div class="res-ico">SF</div>
+            <div class="main"><b>开源字体与音效包</b><span>可商用 · CC 协议 · 完整授权说明</span></div>
+            <div class="ver">v3.0</div>
+            <div class="size">642 MB</div>
+            <a class="dl" href="#resources" data-name="开源字体与音效包">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="research">
+            <div class="res-ico">AN</div>
+            <div class="main"><b>脚本自动化实践集</b><span>示例脚本 · 注释完整 · 可复现</span></div>
+            <div class="ver">v2.2</div>
+            <div class="size">18.7 MB</div>
+            <a class="dl" href="#resources" data-name="脚本自动化实践集">下载</a>
+          </div>
+
+          <div class="res-item" data-cat="video">
+            <div class="res-ico">LB</div>
+            <div class="main"><b>直播推流预设包</b><span>OBS 场景 · 分辨率适配 · 低延迟</span></div>
+            <div class="ver">v1.6</div>
+            <div class="size">76.3 MB</div>
+            <a class="dl" href="#resources" data-name="直播推流预设包">下载</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUTORIAL -->
+  <section id="tutorial">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 03 — 下载指南</span>
+          <h2>四步完成一次安全下载</h2>
+        </div>
+        <p>从检索到校验，每一步都可以复核。遇到可疑文件，请直接在条目页提交报告，社区会在 24 小时内响应。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">STEP 01</span>
+          <h4>检索并确认条目</h4>
+          <p>用关键词或标签定位资源，先看版本号、更新时间与体积是否符合预期，避免下载到过时版本。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">STEP 02</span>
+          <h4>查看校验信息</h4>
+          <p>条目页提供哈希值与扫描结果，核对文件名与大小一致后再点击下载，防止镜像混淆。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">STEP 03</span>
+          <h4>选择就近镜像</h4>
+          <p>优先选择延迟较低的节点，大文件建议使用断点续传工具，完成后比对分卷校验文件。</p>
+        </div>
+        <div class="step reveal">
+          <span class="num">STEP 04</span>
+          <h4>本地复核再运行</h4>
+          <p>运行前用本地杀毒软件复核，重要环境建议先在隔离目录或虚拟环境中测试。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section id="insights">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 04 — 技术观察</span>
+          <h2>关于工具、素材与研究</h2>
+        </div>
+        <p>我们记录实践中的经验与判断，帮助创作者在效率与安全之间找到平衡。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="posts">
+
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 320 140" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#123a34"/></linearGradient></defs>
+              <rect width="320" height="140" fill="url(#g1)"/>
+              <g stroke="#00e6a7" stroke-opacity=".55" fill="none">
+                <path d="M0 100 L40 80 L80 92 L120 60 L160 74 L200 44 L240 62 L280 36 L320 52"/>
+              </g>
+              <g fill="#3b82f6" fill-opacity=".55"><circle cx="120" cy="60" r="3"/><circle cx="200" cy="44" r="3"/><circle cx="280" cy="36" r="3"/></g>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="meta"><i>安全</i><span>2024 / 11</span></div>
+            <h4>如何判断一个绿色软件是否值得信任</h4>
+            <p>从签名信息、目录结构到捆绑行为，几个不需要专业知识也能完成的检查步骤。</p>
+            <span class="more">阅读全文 →</span>
+          </div>
+        </article>
+
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 320 140" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1a2040"/></linearGradient></defs>
+              <rect width="320" height="140" fill="url(#g2)"/>
+              <g fill="#22d3ee" fill-opacity=".6">
+                <rect x="24" y="86" width="18" height="34" rx="3"/>
+                <rect x="56" y="64" width="18" height="56" rx="3"/>
+                <rect x="88" y="74" width="18" height="46" rx="3"/>
+                <rect x="120" y="42" width="18" height="78" rx="3"/>
+                <rect x="152" y="58" width="18" height="62" rx="3"/>
+                <rect x="184" y="30" width="18" height="90" rx="3"/>
+                <rect x="216" y="50" width="18" height="70" rx="3"/>
+                <rect x="248" y="36" width="18" height="84" rx="3"/>
+                <rect x="280" y="20" width="18" height="100" rx="3"/>
+              </g>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="meta"><i>效率</i><span>2024 / 10</span></div>
+            <h4>视频转码的硬件加速该怎么选</h4>
+            <p>不同平台编码器特性对比，以及什么时候值得为了一次批量任务调整参数。</p>
+            <span class="more">阅读全文 →</span>
+          </div>
+        </article>
+
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 320 140" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#140b18"/><stop offset="1" stop-color="#2a1230"/></linearGradient></defs>
+              <rect width="320" height="140" fill="url(#g3)"/>
+              <g stroke="#ff5c8a" stroke-opacity=".55" fill="none">
+                <circle cx="160" cy="70" r="42"/>
+                <circle cx="160" cy="70" r="26"/>
+                <circle cx="160" cy="70" r="10"/>
+              </g>
+              <g fill="#ff5c8a" fill-opacity=".5"><circle cx="160" cy="28" r="3"/><circle cx="202" cy="70" r="3"/><circle cx="160" cy="112" r="3"/><circle cx="118" cy="70" r="3"/></g>
+            </svg>
+          </div>
+          <div class="body">
+            <div class="meta"><i>素材</i><span>2024 / 09</span></div>
+            <h4>素材包授权说明该怎么读</h4>
+            <p>CC 协议、商用边界与二次分发限制，帮助创作者避开最常见的授权误区。</p>
+            <span class="more">阅读全文 →</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 05 — 社区</span>
+          <h2>让分享变成一件长期的事</h2>
+        </div>
+        <p>社区成员参与资源提交、审核与修订。以下是来自贡献者的声音与近期动态。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="community">
+        <div class="quote reveal">
+          <div class="mark">“</div>
+          <p>我在这里找到的不只是工具，而是一套愿意把来龙去脉讲清楚的分享方式。每次提交都有回应，每次修订都会被记录，这种确定性很难得。</p>
+          <div class="who">
+            <div class="avatar">LZ</div>
+            <div>
+              <b>林舟</b>
+              <span>视频创作者 · 贡献 214 条</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="feed-item reveal">
+            <span class="fx">12:40</span>
+            <div><b>视频工具箱 Suite 更新至 v3.8.2</b><span>修复批量字幕时间轴偏移问题</span></div>
+          </div>
+          <div class="feed-item reveal">
+            <span class="fx">11:05</span>
+            <div><b>新增镜像节点 07 / 09</b><span>华南与华东地区下载延迟下降约 35%</span></div>
+          </div>
+          <div class="feed-item reveal">
+            <span class="fx">09:32</span>
+            <div><b>社区完成本周安全巡检</b><span>共校验 412 个条目，3 个被标记待复核</span></div>
+          </div>
+          <div class="feed-item reveal">
+            <span class="fx">昨日</span>
+            <div><b>专题合集《视频工作流》上线</b><span>收录 28 个条目，覆盖剪辑到交付</span></div>
+          </div>
+          <div class="feed-item reveal">
+            <span class="fx">昨日</span>
+            <div><b>新增 6 位审核志愿者</b><span>审核时效预计缩短至 18 小时</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sec-no">/ 06 — 常见问题</span>
+          <h2>你可能关心的几件事</h2>
+        </div>
+        <p>如果下面的内容没有解决你的疑问，可以在社区反馈区留言，我们会补充到页面上。</p>
+      </div>
+      <div class="rule"></div>
+
+      <div class="faq">
+        <details open>
+          <summary><span class="plus">+</span>9l免费破解官网的内容都免费吗？</summary>
+          <p>站内公开资源均免费提供下载，不做付费墙。部分资源由社区成员自发整理，页面会标注来源与授权说明；下载前请核对条目信息。</p>
+        </details>
+        <details>
+          <summary><span class="plus">+</span>如何确认下载的文件是安全的？</summary>
+          <p>每个条目页都会展示哈希值、体积与扫描结果，并提供就近镜像。下载完成后建议先比对哈希，再用本地安全软件复核，重要环境建议在隔离目录中测试。</p>
+        </details>
+        <details>
+          <summary><span class="plus">+</span>为什么有些资源会被下架？</summary>
+          <p>失效链接、版本过旧、校验失败或存在争议的条目会在 72 小时内被标记并下架。下架不代表永久删除，修订完成后可以重新提交审核。</p>
+        </details>
+        <details>
+          <summary><span class="plus">+</span>我可以贡献自己的资源或笔记吗？</summary>
+          <p>可以。社区欢迎工具整理、素材说明与研究笔记，提交时请附上来源、版本信息与授权说明，审核会在 24 小时内给出结果。</p>
+        </details>
+        <details>
+          <summary><span class="plus">+</span>页面提到“破解”是指什么？</summary>
+          <p>这里指对软件行为与协议的研究性整理，包括逆向笔记、兼容性分析与学习记录。我们鼓励技术研究，但反对任何形式的恶意传播与侵权使用。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="eyebrow" style="margin-bottom:1.2rem"><span class="dot"></span>加入 3,206 位贡献者</span>
+        <h2>把好用的资源，交给可信的社区</h2>
+        <p>无论你是创作者、开发者还是普通用户，都可以在这里找到工具，也可以留下你的整理与判断。免费、透明、可验证，是我们共同的底线。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#resources">进入资源库</a>
+          <a class="btn ghost" href="#community">了解社区规则</a>
+        </div>
+        <div class="fineprint">9l免费破解官网 · 内容由社区共建 · 下载前请阅读安全说明</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="logo">9L</span>
+          <span><b>9l免费破解官网</b><small>Free · Open · Secure</small></span>
+        </a>
+        <p>面向极客与创作者的资源分享社区，整理绿色软件、开源工具、视频素材与研究笔记，坚持免费、透明、可验证。</p>
+      </div>
+      <div>
+        <h5>资源</h5>
+        <a href="#resources">绿色软件</a>
+        <a href="#resources">视频工具</a>
+        <a href="#resources">素材包</a>
+        <a href="#resources">逆向笔记</a>
+      </div>
+      <div>
+        <h5>社区</h5>
+        <a href="#community">贡献者</a>
+        <a href="#community">审核规则</a>
+        <a href="#community">反馈区</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div>
+        <h5>关于</h5>
+        <a href="#features">平台能力</a>
+        <a href="#tutorial">下载指南</a>
+        <a href="#insights">技术观察</a>
+        <a href="#top">返回顶部</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 9l免费破解官网 · 内容由社区共建</span>
+      <div class="badges">
+        <span>SHA-256 校验</span>
+        <span>多镜像调度</span>
+        <span>24h 审核</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">已复制下载信息</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航 */
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  if (burger && navLinks) {
+    burger.addEventListener('click', function(){
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ navLinks.classList.remove('open'); });
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2400);
+  }
+
+  /* 资源分类切换 */
+  var resList = document.getElementById('resList');
+  var tabs = document.getElementById('tabs');
+  if (tabs && resList) {
+    tabs.addEventListener('click', function(e){
+      var btn = e.target.closest('button[data-cat]');
+      if (!btn) return;
+      tabs.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-cat');
+      resList.querySelectorAll('.res-item').forEach(function(item){
+        var show = (cat === 'all') || (item.getAttribute('data-cat') === cat);
+        item.style.display = show ? '' : 'none';
+      });
+    });
+  }
+
+  /* 下载按钮 */
+  document.querySelectorAll('.res-item .dl').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var name = a.getAttribute('data-name') || '该资源';
+      showToast('已准备下载：' + name + '（请先核对校验信息）');
+    });
+  });
+
+  /* 卡片跟随光效 */
+  document.querySelectorAll('.card').forEach(function(card){
+    card.addEventListener('mousemove', function(e){
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+    });
+  });
+
+  /* 滚动出现 */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* 数字滚动 */
+  function animateNumber(el){
+    var raw = el.textContent.replace(/[^\d.]/g, '');
+    var target = parseFloat(raw);
+    if (isNaN(target)) return;
+    var decimals = (raw.split('.')[1] || '').length;
+    var suffix = el.textContent.replace(/[\d.,]/g, '');
+    var start = 0, dur = 1200, t0 = null;
+    function step(ts){
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = start + (target - start) * eased;
+      el.textContent = (val >= 1000 && decimals === 0)
+        ? Math.round(val).toLocaleString('en-US') + suffix
+        : val.toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var metrics = document.querySelectorAll('.metric b');
+  if ('IntersectionObserver' in window) {
+    var mio = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          animateNumber(en.target);
+          mio.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    metrics.forEach(function(m){ mio.observe(m); });
+  }
+
+  /* 平滑锚点(兼容不支持 scroll-behavior 的浏览器) */
+  if (!('scrollBehavior' in document.documentElement.style)) {
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = a.getAttribute('href');
+        if (id.length > 1) {
+          var target = document.querySelector(id);
+          if (target) {
+            e.preventDefault();
+            window.scrollTo(0, target.getBoundingClientRect().top + window.pageYOffset - 76);
+          }
+        }
+      });
+    });
+  }
+})();
+</script>
+</body>
+                           </html>
